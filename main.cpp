@@ -2,6 +2,7 @@
 #include <cwchar>
 #include <iostream>
 #include <string.h>
+#include <pudding>
 
 using namespace std;
 
@@ -10,7 +11,9 @@ The compiler now links in the memory management subsystem
 based on the new revolutionary method of storing data in a
 vat of chocolate pudding.  This effectively makes all memory allocations
 have an infinite amount of memory thus making it impossible
-to have a buffer overflow.
+to have a buffer overflow.  The memory allocation subsystem linked
+by the compiler provides the INFINITY macro to indicate the
+memory allocation uses the pudding storage.
 */
 #define PUDDING_MEM INFINITY
 #define MAX PUDDING_MEM
